@@ -78,7 +78,7 @@ const MISC_CLIPS = [
   },
   {
     buttonText: "Heavyweight champ",
-    filename: `${FOLDER}/heavweight-champ.wav`,
+    filename: `${FOLDER}/heavyweight-champ.wav`,
   },
   {
     buttonText: "Spitting out lyrics the day I was born",

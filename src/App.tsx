@@ -6,9 +6,11 @@ import SoundButton from "./SoundButton";
 const App: React.FC = () => {
   return (
     <div className="App">
-      {SOUND_FILES.map(soundProp => (
-        <SoundButton {...soundProp} />
-      ))}
+      <div className="grid">
+        {SOUND_FILES.map(soundProp => (
+          <SoundButton {...soundProp} />
+        ))}
+      </div>
     </div>
   );
 };

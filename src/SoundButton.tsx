@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./SoundButton.css";
 
 export type SoundProps = {
   buttonText: string;
@@ -31,14 +31,18 @@ const useAudio = (url: string) => {
   return [isPlaying, toggle, progress];
 };
 
+const NOOP = () => {};
+
 const SoundButton: React.FC<SoundProps> = ({ buttonText, filename }: SoundProps) => {
   const [isPlaying, toggle, progress] = useAudio(filename);
 
-  const t = typeof toggle === "function" ? toggle : () => {};
+  const t = typeof toggle === "function" ? toggle : NOOP;
 
   return (
-    <div className="Sound">
-      <button onClick={t}>{buttonText}</button>
+    <div>
+      <button className="button" onClick={t}>
+        {buttonText}
+      </button>
     </div>
   );
 };
