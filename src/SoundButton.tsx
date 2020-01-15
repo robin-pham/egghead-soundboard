@@ -10,7 +10,6 @@ const useAudio = (url: string) => {
   const [audio] = useState(new Audio(url));
   const [progress, setProgress] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  console.log(audio.duration, audio.currentTime);
 
   const toggle = () => setIsPlaying(!isPlaying);
 
@@ -35,7 +34,6 @@ const useAudio = (url: string) => {
 const SoundButton: React.FC<SoundProps> = ({ buttonText, filename }: SoundProps) => {
   const [isPlaying, toggle, progress] = useAudio(filename);
 
-  console.log("progress", progress);
   const t = typeof toggle === "function" ? toggle : () => {};
 
   return (
