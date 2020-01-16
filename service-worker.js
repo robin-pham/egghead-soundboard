@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/egghead-soundboard/precache-manifest.f4da13192f70b6cc8f4b02b6d22e516f.js"
+  "/egghead-soundboard/precache-manifest.e2ce90b38c8f150e9cf147fc6e7fad16.js"
 );
 
 self.addEventListener('message', (event) => {
