@@ -1,14 +1,14 @@
 html,
 body,
 #root {
+  background-color: #161616;
   height: 100%;
   width: 100%;
 }
 .App {
   height: 100%;
   width: 100%;
-  background-image: url("/portrait_electrochemistry.jpg");
-  background-color: #161616;
+  background-image: url("/img/portrait_electrochemistry.jpg");
   background-repeat: no-repeat;
   background-position: center center;
 }
