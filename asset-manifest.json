@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/egghead-soundboard/static/css/main.02f092b7.chunk.css",
+    "main.css": "/egghead-soundboard/static/css/main.dc9cd01d.chunk.css",
     "main.js": "/egghead-soundboard/static/js/main.69258c0a.chunk.js",
     "main.js.map": "/egghead-soundboard/static/js/main.69258c0a.chunk.js.map",
     "runtime-main.js": "/egghead-soundboard/static/js/runtime-main.be11b3e1.js",
@@ -8,15 +8,15 @@
     "static/js/2.94dfa134.chunk.js": "/egghead-soundboard/static/js/2.94dfa134.chunk.js",
     "static/js/2.94dfa134.chunk.js.map": "/egghead-soundboard/static/js/2.94dfa134.chunk.js.map",
     "index.html": "/egghead-soundboard/index.html",
-    "precache-manifest.b676fcb370e8d15e797156ddaaa320a5.js": "/egghead-soundboard/precache-manifest.b676fcb370e8d15e797156ddaaa320a5.js",
+    "precache-manifest.f4da13192f70b6cc8f4b02b6d22e516f.js": "/egghead-soundboard/precache-manifest.f4da13192f70b6cc8f4b02b6d22e516f.js",
     "service-worker.js": "/egghead-soundboard/service-worker.js",
-    "static/css/main.02f092b7.chunk.css.map": "/egghead-soundboard/static/css/main.02f092b7.chunk.css.map",
+    "static/css/main.dc9cd01d.chunk.css.map": "/egghead-soundboard/static/css/main.dc9cd01d.chunk.css.map",
     "static/js/2.94dfa134.chunk.js.LICENSE": "/egghead-soundboard/static/js/2.94dfa134.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.be11b3e1.js",
     "static/js/2.94dfa134.chunk.js",
-    "static/css/main.02f092b7.chunk.css",
+    "static/css/main.dc9cd01d.chunk.css",
     "static/js/main.69258c0a.chunk.js"
   ]
 }
