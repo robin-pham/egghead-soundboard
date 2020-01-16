@@ -1,42 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useCallback } from "react";
 import "./SoundButton.css";
+import useAudio from "./hooks/useAudio";
 
 export type SoundProps = {
   buttonText: string;
   filename: string;
+  onClick?: () => void;
 };
 
-const useAudio = (url: string) => {
-  const [audio] = useState(new Audio(url));
-  const [progress, setProgress] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+const SoundButton: React.FC<SoundProps> = ({ buttonText, filename, onClick }: SoundProps) => {
+  const [, toggle] = useAudio(filename);
 
-  const toggle = () => setIsPlaying(!isPlaying);
-
-  useEffect(() => {
-    isPlaying ? audio.play() : audio.pause();
-  }, [isPlaying]);
-
-  useEffect(() => {
-    audio.addEventListener("timeupdate", () => {
-      setProgress(audio.currentTime / audio.duration);
-    });
-    audio.addEventListener("ended", () => setIsPlaying(false));
-    return () => {
-      audio.removeEventListener("ended", () => setIsPlaying(false));
-      audio.removeEventListener("timeupdate", () => setIsPlaying(false));
-    };
-  }, []);
-
-  return [isPlaying, toggle, progress];
-};
-
-const NOOP = () => {};
-
-const SoundButton: React.FC<SoundProps> = ({ buttonText, filename }: SoundProps) => {
-  const [isPlaying, toggle, progress] = useAudio(filename);
-
-  const t = typeof toggle === "function" ? toggle : NOOP;
+  const t = useCallback(() => {
+    if (onClick) onClick();
+    if (typeof toggle === "function") {
+      toggle();
+    }
+  }, [onClick, toggle]);
 
   return (
     <div>

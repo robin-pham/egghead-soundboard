@@ -7,12 +7,19 @@ body,
 .App {
   height: 100%;
   width: 100%;
+  background-image: url("/portrait_electrochemistry.jpg");
+  background-color: #161616;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .grid {
+  align-items: center;
   display: grid;
-  padding: 1em;
-  row-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 0.5em;
+  row-gap: 10px;
+  column-gap: 5px;
 }

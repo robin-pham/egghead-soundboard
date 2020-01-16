@@ -2,12 +2,15 @@
   background-color: #bd3d30;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
   display: inline-block;
   padding: 10px;
   transition: all 0.4s ease 0s;
+  color: white;
+  font-size: 1em;
 }
 
 .button:hover {
-  color: white;
+  color: black;
   transition: all 0.1s ease 0s;
 }
