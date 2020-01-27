@@ -1,6 +1,6 @@
 {
   "name": "egghead",
-  "homepage": "https://robin-pham.github.com/egghead-soundboard",
+  "homepage": "https://egghead-soundboard.netlify.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
