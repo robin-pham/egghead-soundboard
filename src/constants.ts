@@ -62,7 +62,7 @@ const INSPIRATIONAL_CLIPS = [
     filename: `${FOLDER}/incremental-progress.wav`,
   },
   {
-    buttonText: "Oncore! All right! Yeah!",
+    buttonText: "Allcore! All right! Yeah!",
     filename: `${FOLDER}/oncore-allright.wav`,
   },
   {
@@ -77,7 +77,7 @@ const MISC_CLIPS = [
     filename: `${FOLDER}/welcome-to-revachol.wav`,
   },
   {
-    buttonText: "Heavyweight champ",
+    buttonText: "Heavyweight jam",
     filename: `${FOLDER}/heavyweight-champ.wav`,
   },
   {
